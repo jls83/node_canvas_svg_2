@@ -1,0 +1,8 @@
+version: '2'
+services:
+    test-app:
+        build: .
+        image: node_canvas_svg_2
+        command: /node_canvas_svg_2/docker_start.sh
+        volumes:
+            - /Users/jls83/other_projects/node_canvas_svg_2:/node_canvas_svg_2

@@ -1,0 +1,18 @@
+{
+  "name": "node_canvas_svg_2",
+  "version": "1.0.0",
+  "description": "Testing SVGs in node-canvas",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jls83/node_canvas_svg_2.git"
+  },
+  "author": "Matthew Billie",
+  "homepage": "https://github.com/jls83/node_canvas_svg_2/README.md",
+  "dependencies": {
+    "canvas": "^2.3.1"
+  },
+  "devDependencies": {}
+}

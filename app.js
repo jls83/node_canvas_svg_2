@@ -3,7 +3,7 @@ console.log('Starting SVG testing...');
 const fs = require('fs');
 const { createCanvas, Image } = require('canvas');
 
-const VERSION = '2.3.1';
+const VERSION = '2.0.0-alpha.18';
 
 const canvas = createCanvas(400, 400);
 

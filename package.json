@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/jls83/node_canvas_svg_2.git"
   },
-  "author": "Matthew Billie",
+  "author": "Joseph Sanders",
   "homepage": "https://github.com/jls83/node_canvas_svg_2/README.md",
   "dependencies": {
     "canvas": "^2.3.1"

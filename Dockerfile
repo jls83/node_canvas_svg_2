@@ -38,10 +38,10 @@ RUN ln -s /usr/bin/python2.7 /usr/bin/python
 
 # Install node/npm
 RUN set -x && \
-    curl -L -o node.tar.gz "https://nodejs.org/download/release/v10.19.0/node-v10.19.0-linux-x64.tar.gz" && \
+    curl -L -o node.tar.xz "https://nodejs.org/dist/v12.16.2/node-v12.16.2-linux-x64.tar.xz" && \
     mkdir -p /usr/src/node && \
-    tar -xzf node.tar.gz -C /usr/src/node --strip-components=1 && \
-    rm node.tar.gz && \
+    tar -xJvf node.tar.xz -C /usr/src/node --strip-components=1 && \
+    rm node.tar.xz && \
     ln -s /usr/src/node/bin/node /usr/local/bin/node && \
     ln -s /usr/src/node/bin/npm /usr/local/bin/npm && \
     npm install npm@6.13.4 -g

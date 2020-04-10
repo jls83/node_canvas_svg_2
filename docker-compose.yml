@@ -5,5 +5,4 @@ services:
         image: node_canvas_svg_2
         command: /node_canvas_svg_2/docker_start.sh
         volumes:
-            # Change the path on the left to the Git repo directory
-            - /Users/jls83/other_projects/node_canvas_svg_2:/node_canvas_svg_2
+            - .:/node_canvas_svg_2

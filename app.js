@@ -1,9 +1,12 @@
 console.log('Starting SVG testing...');
 
 const fs = require('fs');
-const { createCanvas, Image } = require('canvas');
+const { createCanvas, Image, version, cairoVersion, jpegVersion, gifVersion } = require('canvas');
 
-const VERSION = '2.3.1';
+console.log(`Cairo version: ${cairoVersion}`);
+console.log(`JPeg version: ${jpegVersion}`);
+console.log(`GIF version: ${gifVersion}`);
+console.log(`Canvas version: ${version}`);
 
 const canvas = createCanvas(400, 400);
 
@@ -24,7 +27,7 @@ const context = canvas.getContext('2d');
 context.drawImage(image, 0, 0, image.width, image.height);
 
 const buffer = canvas.toBuffer();
-const fileName = `test-${VERSION}.png`;
+const fileName = `test-${version}.png`;
 fs.open(fileName, 'w', (err, fd) => {
     if (err) throw `Error opening file: ${err}`;
     fs.write(fd, buffer, 0, buffer.length, null, (err) => {

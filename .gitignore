@@ -200,3 +200,4 @@ fabric.properties
 
 # Just nuke all of the .idea stuff
 .idea/
+test-*.png

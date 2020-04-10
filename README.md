@@ -1,5 +1,5 @@
 ### To Start
-1. Edit `docker-compose.yml` to point to the correct path on your local machine
+1. Install Docker
 1. `docker-compose up` to confirm output
 
 ### To Test

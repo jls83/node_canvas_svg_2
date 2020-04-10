@@ -53,5 +53,3 @@ COPY package-lock.json package-lock.json
 COPY package.json package.json
 COPY app.js app.js
 COPY docker_start.sh docker_start.sh
-
-RUN npm install
